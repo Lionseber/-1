@@ -1,0 +1,676 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:ital,wght@0,300;1,500;1,700&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif;
+}
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+
+::selection {
+    background-color: #0b372dbb;
+}
+
+.logo > a > img {
+    width: 14rem;
+    height: 6rem;
+    margin-left: 2rem;
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+header {
+    position: absolute;
+    width: 100%;
+    padding:  0 0;
+    top: 0;
+    left: 0;
+    z-index: 999999;
+  
+}
+
+header > nav {
+    background-color: inherit;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+nav > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+nav > ul > li {
+    padding-left: 1.5rem;
+}
+
+nav > ul > li > a {
+    text-decoration: none;
+    color: white;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border: 2px solid white;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.btt:hover {
+    background: #fff;
+    color: #000;
+}
+
+.hamburger {
+    padding-left: 1.5rem;
+}
+
+.hamburger > a {
+    padding: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 80%;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 0.10rem;
+    
+}
+
+.hamburger .bar::before, 
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 0.125rem;
+}
+
+.bar::before {
+    margin-top: -0.3rem;
+    top: -4.5px;
+}
+.bar::after {
+    margin-top: 0.3rem;
+    top: 4.5px;
+} 
+
+/* nav-------------------------------------------------------------- */
+
+main {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.vignette {
+    position: absolute;
+    z-index: 100;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background: radial-gradient(ellipse at center, 
+    rgba(0,0,0,0) 70%, 
+    rgba(0,0,0,0.7));
+    pointer-events: none;
+}
+
+.palarex {
+    pointer-events: none;
+    transition: cubic-bezier(.02,.49,.32,.99);
+    
+    
+}
+
+.bg-img {
+    position: absolute;
+    z-index: 1;
+    width: 175rem;
+    top: calc(50% - 24.375rem);
+    left: calc(50% + 0.625rem);;
+}
+
+.fog-7 {
+    position: absolute;
+    z-index: 2;
+    width: 118.75rem;
+    top: calc(50% - -5.375rem);
+    left: calc(50% + 18.75rem);;
+}
+
+
+.mt-10 {
+    position: absolute;
+    z-index: 3;
+    width: 59.75rem;
+    top: calc(50% - -1.5rem);
+    left: calc(50% + 14.375rem);;
+}
+
+.fog-6 {
+    position: absolute;
+    z-index: 3;
+    width: 100.625rem;
+    top: calc(50% - -14.687rem);
+    left: calc(50% + 0.625rem);;
+}
+
+.mt-9 {
+    position: absolute;
+    z-index: 5;
+    width: 29.375rem;
+    top: calc(50% - -10.5rem);
+    left: calc(50% + -38rem);;
+}
+
+.mt-8 {
+    position: absolute;
+    z-index: 6;
+    width: 53.6rem;
+    top: calc(50% - -9.4rem);
+    left: calc(50% + -15.375rem);;
+}
+
+.fog-5 {
+    position: absolute;
+    z-index: 7;
+    width: 28.125rem;
+    top: calc(50% - 10rem);
+    left: calc(50% + 1.25rem);;
+}
+
+.mt-7 {
+    position: absolute;
+    z-index: 8;
+    width: 33.625rem;
+    top: calc(50% - -8rem);
+    left: calc(50% + 16.375rem);;
+}
+
+.text {
+    position: absolute;
+    z-index: 9;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    text-transform: uppercase;
+    pointer-events: auto;
+    color: #fff;
+}
+
+.logo-main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transform: translate(-10%, -5%);
+}
+
+.logo-main > .logo-t {
+    width: 10%;
+    height: 10%;
+    border-radius: 50%;
+}
+
+.logo-main > .x-logo {
+    width: 7%;
+    height: 7%;
+    margin-left: 2rem;
+    margin-right: 2rem;
+}
+
+.logo-main > .spu-logo {
+    position: absolute;
+    left: 62%;
+    width: 27%;
+    height: 15rem;
+}
+
+
+.text-main {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-main > h1 {
+    font-weight: 800;
+    font-size: 5rem;
+}
+
+
+.mt-6 {
+    position: absolute;
+    z-index: 10;
+    width: 30.5rem;
+    top: calc(50% - -3rem);
+    left: calc(50% +  34rem);;
+}
+
+.fog-4 {
+    position: absolute;
+    z-index: 11;
+    width: 36.875rem;
+    top: calc(50% - -13rem);
+    left: calc(50% + 1.25rem);;
+}
+
+.mt-5 {
+    position: absolute;
+    z-index: 12;
+    width: 39.063rem;
+    top: calc(50% - -18rem);
+    left: calc(50% +  4.25rem);;
+}
+
+.fog-3 {
+    position: absolute;
+    z-index: 13;
+    width: 29rem;
+    top: calc(50% - -21rem);
+    left: calc(50% +  12.25rem);;
+}
+
+.mt-4 {
+    position: absolute;
+    z-index: 14;
+    width: 48.75rem;
+    top: calc(50% - -14rem);
+    left: calc(50% +  -31.75rem);;
+}
+
+.mt-3 {
+    position: absolute;
+    z-index: 15;
+    width: 33.75rem;
+    top: calc(50% - -5rem);
+    left: calc(50% +  46.25rem);;
+}
+
+.fog-2 {
+    position: absolute;
+    z-index: 16;
+    width: 39.75rem;
+    top: calc(50% - -12rem);
+    left: calc(50% +  21.25rem);;
+}
+
+.mt-2 {
+    position: absolute;
+    z-index: 17;
+    width: 43.75rem;
+    top: calc(50% - -11.5rem);
+    left: calc(50% + 22.25rem);;
+}
+
+.mt-1 {
+    position: absolute;
+    z-index: 18;
+    width: 38rem;
+    top: calc(50% - -1rem);
+    left: calc(50% + -50rem);;
+}
+
+.sun {
+    position: absolute;
+    z-index: 19;
+    top: 0;
+    right: 0;
+    width: 100%;
+    pointer-events: none;
+    
+}
+
+.bs {
+    position: absolute;
+    z-index: 20;
+    top: 55%;
+    right: 0;
+    width: 100%;
+}
+
+.fog-1 {
+    position: absolute;
+    z-index: 21;
+    width: 100%;
+    top: calc(100% - 22.188rem);
+    left: calc(50% + 18.75rem);
+}
+
+
+/* login----------------------------------------------------- */
+
+.first-login {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 10000;
+}
+
+
+
+.login {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 26.25rem;
+    background: initial;
+    border: 0.125rem solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    color: #0b372dbb;
+    padding: 0rem 1rem 0rem 1rem;
+    z-index: 1;
+}
+
+.login.active {
+    display: block;
+    transform: translate(0.3);
+}
+
+
+.icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.813rem;
+    height: 2.813rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.icon-close:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+
+.login-title {
+    font-weight: 800;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+.login--input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.login--input::placeholder {
+    color: #000;
+}
+
+
+.login-box {
+    position: relative;
+}
+.login-box > input {
+    outline: none;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.login-box > input:focus~label,
+.login-box > input:valid~label {
+    top: -10px;
+}
+
+.login-box > i {
+    position: absolute;
+    top: 3.4rem;
+    right: 8%;
+}
+
+.remember-forgot {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0rem 1rem 0rem 1rem;
+    margin-top: 1rem;
+    font-size: 1rem;
+}
+
+.remember-forgot > label > input {
+    accent-color: white;
+    margin-right: 0.25rem;
+}
+
+.remember-forgot > label > input:hover {
+    cursor: pointer;
+}
+
+.remember-forgot > a {
+    color: #9AD0C2;
+    text-decoration: none;
+}
+
+.remember-forgot > a:hover {
+    text-decoration: underline;
+}
+ 
+
+
+.btn-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1.25rem;
+    background-color: white;
+}
+
+.btn-sub:hover {
+    transform: scale(1.050);
+    cursor: pointer;
+}
+
+.btn-sub > i {
+    position: absolute;
+    left: 83%;
+}
+
+.register-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.register-link > p > a {
+    color: #9AD0C2;
+    text-decoration: none;
+}
+
+.login-link > p > a:hover {
+    text-decoration: underline;
+}
+
+
+/* Register----------------------------------------------------- */
+
+.register {
+    display: none;
+    position: absolute;
+    text-align: center;
+    width: 26.25rem;
+    background: initial;
+    border: 0.125rem solid rgba(255, 255, 255, .2);
+    backdrop-filter: blur(1rem);
+    border-radius: 1rem;
+    color: #0b372dbb;
+    padding: 0rem 1rem 0rem 1rem;
+    z-index: 1;
+}
+
+.register.active {
+    display: block;
+}
+
+
+.re-icon-close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 2.813rem;
+    height: 2.813rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-icon-close:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.re-title {
+    font-weight: 800;
+    font-size: 4rem;
+    margin-top: 1rem;
+}
+
+
+.re-radio {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.re-radio > label {
+    text-align: center;
+    font-size: 1.5rem;
+}
+
+.re-radio > label > input {
+    transform: scale(1.7);
+}
+
+#radio-im {
+    margin-left: 3rem;
+}
+
+.re--input {
+    width: 100%;
+    height: 3rem;
+    margin-top: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    border: none;
+}
+
+.re--input::placeholder {
+    color: #000;
+}
+
+
+.re-box {
+    position: relative;
+}
+.re-box > input {
+    outline: none;
+    padding: 1rem 1rem 1rem 1rem;
+}
+
+.re-box > input:focus~label,
+.re-box > input:valid~label {
+    top: -10px;
+}
+
+.re-box > i {
+    position: absolute;
+    top: 3.4rem;
+    right: 8%;
+}
+
+.date-file {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 1.5rem;
+}
+
+
+.date-file > label > input {
+    outline: none;
+    transform: scale(1.1);
+}
+
+
+.re-btn-sub {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 2.5rem;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+    border-radius: 1rem;
+    border: none;
+    font-size: 1rem;
+    background-color: white;
+}
+.re-btn-sub > i {
+    position: absolute;
+    left: 83%;
+}
+
+.login-link {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 2rem;
+}
+
+.login-link > p > a {
+    color: #9AD0C2;
+    text-decoration: none;
+}
+
+.login-link > p > a:hover {
+    text-decoration: underline;
+}

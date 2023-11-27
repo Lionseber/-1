@@ -1,0 +1,350 @@
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300&family=Poppins:ital,wght@0,300;1,500;1,700&display=swap');
+*, *::before, *::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family:'Kanit', sans-serif;
+}
+
+
+html {
+    font-size: calc(60% + 0.8vmin);
+}
+
+
+body { 
+    backdrop-filter: blur(0.5rem);
+    min-height: 100vh;
+    background-color: white;
+    background-size: cover;
+    background-position: center;
+    scroll-behavior: smooth;
+}
+
+.logo > a > img {
+    width: 14rem;
+    height: 6rem;
+    margin-left: 2rem;
+}
+
+.logo:hover {
+    transform: scale(1.1); 
+    cursor: pointer;
+}
+
+
+header {
+    position: relative;
+    width: 100%;
+    padding:  0 0;
+    top: 0;
+    left: 0;
+    z-index: 99;
+    background-color: white;
+}
+
+header.sticky {
+    position: sticky;
+    top: 0;
+    background: #DED0B6;
+}
+
+
+header > nav {
+    background-color: inherit;
+    max-width: 100%;
+    margin: 0 auto;
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+
+.navbar-left > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-left  > ul > li {
+    padding-left: 1.5rem;
+}
+
+.cl {
+    margin-left: 5rem;
+}
+
+
+.navbar-left > ul > li > a {
+    position: relative;
+    text-decoration: none;
+    color: gray;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border-radius: 1rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+}
+
+.navbar-left > ul > li > a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 5px;
+    width: 100%;
+    height: 3px;
+    background: gray;
+    border-radius: 5px;
+    transform: scaleX(0);
+    transition: transform .2s;
+}
+
+.navbar-left > ul > li > a:hover::after {
+    transform: scaleX(1);
+}
+
+
+.navbar-right > ul {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+
+.navbar-right > ul > li > a {
+    
+    margin-right: 1rem;
+}
+
+.navbar-right > ul > li > a > img{
+    
+    width: 2rem;
+    height: 2rem;
+}
+
+.navbar-right > ul > li > a > img:hover{
+    
+    transform: scale(1.1);
+}
+
+
+#search-nav {
+    background-color: #F0F0F0;
+}
+
+.navbar-right > ul > input {
+    width: 20rem;
+    height: 2rem;
+    margin-right: 3rem;
+    border-radius: 1rem;
+    outline: none;
+    border: none;
+}
+
+.navbar-right > ul > li {
+    padding-left: 0.5rem;
+}
+
+.navbar-right >  ul > li > a {
+    text-decoration: none;
+    color: black;
+    padding: 0 1.5em;
+    text-transform: uppercase;
+    font-weight: 500;
+    font-size: 1.25rem;
+    border-radius: 2rem;
+    padding: 0.5rem 0.5rem 0.5rem 0.5rem;
+} 
+
+.hamburger {
+    position: relative;
+    padding-left: 1.5rem;
+}
+
+.hamburger > a {
+    padding: 0;
+    width: 3.5rem;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    background: rgba(115, 115, 115, 0.7);
+    backdrop-filter: blur(0.625rem);
+    -webkit-backdrop-filter: blur(0.625rem);
+    justify-content: center;
+    align-items: center;
+}
+
+.hamburger > a:hover {
+    transform: scale(1.1);
+}
+
+.hamburger .bar {
+    position: relative;
+    width: 80%;
+    height: 0.15rem;
+    background-color: #fff;
+    border-radius: 0.10rem;
+    
+}
+
+.hamburger .bar::before, 
+.hamburger .bar::after{
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 80%;
+    height: 100%;
+    background-color: inherit;
+    border-radius: 0.125rem;
+}
+
+.bar::before {
+    margin-top: -0.3rem;
+    top: -4.5px;
+}
+.bar::after {
+    margin-top: 0.3rem;
+    top: 4.5px;
+} 
+
+.icon-header {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    margin-right: 1.25rem;
+    right: 0rem;
+    top: 20rem;
+    transition: 0.5s ease;
+    z-index: 999;
+}
+
+.icon-header > a > img {
+    width: 3rem;
+    height: 100%;
+    margin-top: 2rem;
+
+
+}.icon-header a:hover {
+    transform: scale(1.6);
+}
+
+/* header------------------------------------------------------------ */
+
+.container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    backdrop-filter: blur(0.1rem);
+}
+
+
+.main-serch {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+}
+
+.main-serch > input {
+    width: 80rem;
+    height: 3rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    margin-right: 2rem;
+    background-color: #F0F0F0;
+}
+
+.main-serch > button {
+    width: 15%;
+    height: 3rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    font-size: 1.25rem;
+}
+
+.main-slide {
+    width: 100%;
+    margin-top: 3rem;
+}
+
+.sub-search {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+
+}
+
+.sub-search > button {
+    width: 10rem;
+    height: 2.5rem;
+    border-radius: 2rem;
+    outline: none;
+    border: none;
+    margin-right: 1rem;
+    margin-left: 1rem;
+}
+
+.photo-first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.photo-first > .photo1 {
+    width: 100%;
+    height: 15rem;
+    border: 2px solid black;
+    background: inherit;
+
+}
+
+.photo-second {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    margin-top: 2.5rem;
+    padding-left: 10rem;
+    padding-right: 10rem;
+}
+
+.photo-second > .photo2 {
+    width: 100%;
+    height: 15rem;
+    border: 2px solid black;
+    background: inherit;
+
+}
+
+/* footer--------------------------------------------------------- */
+
+footer {
+    margin-top: 20vh;
+}
+.last-footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 5rem;
+    background-color: #545454;
+    color: white;
+}
+
+.last-footer > h3 > span {
+    color: #426CD7;
+}
+

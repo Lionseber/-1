@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ธารณามัย</title>
+    <link rel="stylesheet" href="/fisrt.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+    <header>
+        <nav>
+            <div class="logo" >
+                <a href="/main.html"><img src="/img/logo-nobg.png" alt=""></a>
+            </div>
+            <ul>
+                <li><a href="#" class="btn-lg btt"> Login </a></li>
+                <li><a href="#" class="btn-su btt"> Sign Up </a></li>
+                <li class="hamburger">
+                    <a href="#">
+                        <div class="bar"></div>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <div class="first-login">
+                <div class="login">
+                    <span class="icon-close">
+                        <i class="fa-regular fa-circle-xmark fa-2xl"></i>
+                    </span>
+                    <form action="" class="login-form">
+                        <h1 class="login-title"> Login </h1>
+                        <div class="login-input">
+                            <div class="login-box">
+                                <input type="text" placeholder="Username" 
+                                required class="login--input" id="user-window">
+                                <i class="fa-solid fa-user fa-beat fa-xl" ></i>
+                            </div>
+                            <div class="login-box">
+                                <input type="text" placeholder="Password" 
+                                required class="login--input" id="pass-window">
+                                <i class="fa-solid fa-lock fa-beat fa-xl" ></i>
+                            </div>
+                            <div class="remember-forgot">
+                                <label for="checkbox">
+                                    <input type="checkbox" name="remember-user1" id="checkbox"> จำรหัสของฉัน?
+                                </label>
+                                <a href="#"> ลืมรหัสผ่านหรอ? </a>
+                            </div>
+                            <button onclick="btnLogin()" class="btn-sub" > ล็อกอิน 
+                                <i class="fa-solid fa-arrow-right-to-bracket fa-xl"></i>
+                            </button>
+                            <div class="register-link">
+                                <p> ยังไม่มีรหัส? <a href="#"> สมัครสมาชิก </a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+                <div class="register">
+                    <span class="re-icon-close">
+                        <i class="fa-regular fa-circle-xmark fa-2xl"></i>
+                    </span>
+                    <form action="" class="re-form">
+                        <h1 class="re-title"> Register </h1>
+                        <div class="re-radio">
+                            <label for="radio-im">
+                                <input type="radio" name="remember-user2" id="radio-in"> บุคคล
+                                <input type="radio" name="remember-user2" id="radio-im"> บริษัท
+                            </label>
+                        </div>
+                        <div class="re-input">
+                            <div class="re-box">
+                                <input type="text" placeholder="Email" required class="re--input" id="re-email">
+                                <i class="fa-solid fa-envelope fa-beat fa-xl"></i>
+                            </div>
+                            <div class="re-box">
+                                <input type="text" placeholder="Username" required class="re--input" id="re-user">
+                                <i class="fa-solid fa-user fa-beat fa-xl" ></i>
+                            </div>
+                            <div class="re-box">
+                                <input type="number" placeholder="Password" required class="re--input" id="re-password">
+                                <i class="fa-solid fa-lock fa-beat fa-xl" ></i>
+                            </div>
+                            <button type="submit" class="re-btn-sub"> สมัครสมาชิก
+                                <i class="fa-solid fa-address-card fa-xl"></i>
+                            </button>
+            
+                            <div class="login-link">
+                                <p> มีรหัสแล้ว? <a href="#"> ล็อกอินเลย </a></p>
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <div class="vignette"></div>
+            <div class="all-img">
+                <img src="/img/background.png" data-speedx="0.3" data-speedy="0.38" 
+                data-speedz="0" data-rotation="0" 
+                data-distance="-200" class="palarex bg-img">
+                <img src="/img/fog_7.png" data-speedx="0.27" data-speedy="0.32"
+                data-speedz="0" data-rotation="0"  
+                data-distance="850"  class="palarex fog-7">
+                <img src="/img/mountain_10.png" data-speedx="0.195" data-speedy="0.305" 
+                data-speedz="0" data-rotation="0" 
+                data-distance="1100"  class="palarex mt-10">
+                <img src="/img/fog_6.png" data-speedx="0.25" data-speedy="0.28" 
+                data-speedz="0" data-rotation="0" 
+                data-distance="1400"  class="palarex fog-6">
+                <img src="/img/mountain_9.png" data-speedx="0.125" data-speedy="0.155"
+                data-speedz="0.15" data-rotation="0.02" 
+                data-distance="1700"  class="palarex mt-9">
+                <img src="/img/mountain_8.png" data-speedx="0.1" data-speedy="0.11" 
+                data-speedz="0" data-rotation="0.02" 
+                data-distance="1800"  class="palarex mt-8">
+                <img src="/img/fog_5.png" data-speedx="0.16" data-speedy="0.105" 
+                data-speedz="0" data-rotation="0"  
+                data-distance="1900" class="palarex fog-5">
+                <img src="/img/mountain_7.png" data-speedx="0.1" data-speedy="0.1"
+                data-speedz="0" data-rotation="0.09" 
+                data-distance="2000"  class="palarex mt-7">
+                <div class="text palarex" data-speedx="0.07" data-speedy="0.07" 
+                data-speedz="0" data-rotation="0" >
+                    <div class="logo-main">
+                        <img src="./img/logo.png" alt="#" class="logo-t">
+                        <img src="/img/x-logo.png" alt="#" class="x-logo">
+                        <img src="/img/logo-spu.png" alt="#" class="spu-logo">
+                    </div>
+                    <div class="text-main" >
+                        <h1>ห้องสมุดแห่งความทรงจำ</h1>
+                        <h3>Library of Memories</h3>
+                    </div>  
+                </div>
+                <img src="/img/mountain_6.png" data-speedx="0.065" data-speedy="0.05" 
+                data-speedz="0.05" data-rotation="0.12" 
+                data-distance="2300"  class="palarex mt-6">
+                <img src="/img/fog_4.png" data-speedx="0.135" data-speedy="0.035" 
+                data-speedz="0" data-rotation="0"  
+                data-distance="2400" class="palarex fog-4">
+                <img src="/img/mountain_5.png" data-speedx="0.08" data-speedy="0.01" 
+                data-speedz="0.13" data-rotation="0.1" 
+                data-distance="2550" class="palarex mt-5">
+                <img src="/img/fog_3.png" data-speedx="0.11" data-speedy="0.05" 
+                data-speedz="0" data-rotation="0" 
+                data-distance="2800"  class="palarex fog-3">
+                <img src="/img/mountain_4.png" data-speedx="0.059" data-speedy="0.010" 
+                data-speedz="0.35" data-rotation="0.14"  
+                data-distance="3200"  class="palarex mt-4">
+                <img src="/img/mountain_3.png" data-speedx="0.04" data-speedy="0.0010" 
+                data-speedz="0.32" data-rotation="0.05" 
+                data-distance="3400"  class="palarex mt-3">
+                <img src="/img/fog_2.png" data-speedx="0.0235" data-speedy="0.05" 
+                data-speedz="0" data-rotation="0.15" 
+                data-distance="3600" class="palarex fog-2">
+                <img src="/img/mountain_2.png" data-speedx="0.0235" data-speedy="0.0155" 
+                data-speedz="0" data-rotation="0"  
+                data-distance="3800" class="palarex mt-2">
+                <img src="/img/mountain_1.png" data-speedx="0.027" data-speedy="0.010" 
+                data-speedz="0" data-rotation="0.2" 
+                data-distance="4000"  class="palarex mt-1">
+                <img src="/img/sun_rays.png" class="sun hide">
+                <img src="/img/black_shadow.png" data-speedx="0.3" class="bs hide">
+                <img src="/img/fog_1.png" data-speedx="0.12" data-speedy="0.025" 
+                data-speedz="0.53" data-rotation="0" 
+                data-distance="4200" class="palarex fog-1">
+            </div>
+        </section>
+        
+        
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+    <script src="/index.js"></script>
+    </main>
+</body>
+</html>
